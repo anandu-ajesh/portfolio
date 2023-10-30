@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/860ac19914.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <h1><span>ANANDU </span>AJESH</h1>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Full Stack Developer</p>
+          <h1>
+            Hai,I am <span>ANANDUAJESH</span><br />
+            From India
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col1">
+            <img src="images/abot.jpeg" />
+          </div>
+          <div class="about-col2">
+            <h1 class="abot">About Me</h1>
+            <br />
+            <br />
+            <p>
+              I'm a passionate and experienced full stack developer with a
+              strong foundation in both front-end and back-end technologies. My
+              journey in the world of software development began with a
+              fascination for creating elegant and efficient solutions to
+              real-world problems. Over the years, I've honed my skills and kept
+              up with the ever-evolving tech landscape to deliver high-quality,
+              user-centric applications.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active" onclick="opentab('Skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('Experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="Skills">
+              <ul>
+                <li>
+                  <span>Front-end</span><br />Html 5<br />Css<br />JavaScript<br />React<br /><br />
+                </li>
+                <li>
+                  <span>Back-end</span><br />Node Js<br />Express<br />Mongo Db
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Experience">
+              <ul>
+                <li><span>2020-2021</span><br />Internship at Home</li>
+                <li>
+                  <span>2022-current</span><br />Web App Development training
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li>
+                  <span>2018-2021</span><br />Bsc Computer Science At TKM
+                  College For Higher Studies,SecondMile Stone
+                </li>
+                <li>
+                  <span>2022-2024</span><br />MCA at Sree Narayana Institute Of
+                  Technology,Vadakevila
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- services section -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="serv">My Services</h1>
+        <div class="service-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>MERN Stack Web Development</h2>
+            <br />
+            <p>
+              Take your online presence to the next level with MERN stack web
+              development service. ThinkSys helps in creating dynamic,
+              responsive, and feature-rich websites. By capitalizing on
+              MongoDB’s scalable data management and React’s engaging user
+              interfaces, our experts deliver web apps that provide exceptional
+              user experiences. Our team's extensive expertise in MERN stack
+              development ensures that your website benefits from cutting-edge
+              technologies, resulting in rapid page loading, seamless
+              navigation, and user-friendly design that keeps visitors engaged.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-mobile"></i>
+            <h2>Enterprise Application Development</h2>
+            <br />
+            <p>
+              A specific application for your enterprise can streamline certain
+              tasks, resulting in faster and more efficient outcomes. Our
+              enterprise app development service uses the MERN stack’s
+              capabilities to create scalable and secure solutions tailored for
+              large-scale operations. Our professionals are well-versed in the
+              complex requirements of enterprise-grade apps and employ advanced
+              data handling and secure and modular components to deliver apps
+              that optimize business processes and adapt to evolving demands.
+              Moreover, the created app will swiftly integrate with existing
+              infrastructures, ensuring data integrity and robust performance
+              for your organization.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-handshake-angle"></i>
+            <h2>Maintenance and Support</h2>
+            <br />
+            <p>
+              Experience peace of mind for your MERN application with our
+              maintenance and support services. Our experts ensure your app
+              remains secure, robust, and up-to-date through proactive
+              monitoring and efficient updates. The MERN stack’s modular nature
+              helps apply enhancements, bug fixes, and security patches
+              seamlessly, protecting your app’s optimal performance. With our
+              24X7 support service, your app can have uninterrupted functioning,
+              minimal downtime, and prevention from security vulnerabilities.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- portfolio section -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="serv">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work3.jpg" />
+            <div class="layer">
+              <h3>Ecommerce website</h3>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work5.jpeg" />
+            <div class="layer">
+              <h3>Food Delevery App</h3>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work4.jpeg" />
+            <div class="layer">
+              <h3>Personal Website</h3>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+
+    <!-- contact section -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="serv">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i>ajeshanandu566@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>7994629613</p>
+            <div class="social-icon">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="images/resume.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input
+                type="text"
+                name="Name"
+                placeholder="Name"
+                required
+              />Name<br /><br />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Email"
+                required
+              />Email<br /><br />
+              <textarea
+                name="Message"
+                rows="8"
+                cols="80"
+                placeholder="Message"
+                required
+              ></textarea
+              >Message<br /><br />
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>
+          Copyright@AnanduAjesh.Made by<i class="fa-solid fa-heart"></i> Anandu
+          Ajesh
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active");
+        }
+
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu() {
+        sidemenu.style.right = "-200";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycby5LPME3d27x5ajLzRCSdq0zYtaVF7CSH9XwbxB46ZNzRN0W1ghfxp8_cce6UP-LRv3/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message send successfully";
+            setTimeout(() => {
+              msg.innerHTML = "";
+            }, 3000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
